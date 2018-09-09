@@ -1,0 +1,45 @@
+{
+    "name": "defshop/app",
+    "description": "DefShop",
+    "license": "",
+    "type": "project",
+    "require": {
+        "php": ">=7.2.0",
+        "aura/router": "^3.1",
+        "doctrine/orm": "^2",
+        "zendframework/zend-diactoros": "^1.8"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*",
+        "codeception/codeception": "@stable",
+        "mockery/mockery": "^1.1",
+        "fzaninotto/faker": "^1.8",
+        "phpstan/phpstan": "^0.10.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "DefShop\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout" : 0,
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "phpstan": "bin/phpstan analyse --level=7 src",
+        "phpcs": "bin/phpcs --colors -sp src",
+        "phpcbf": "bin/phpcbf --colors -sp src",
+        "phan": "PHAN_ALLOW_XDEBUG=true bin/phan  -m=text --color",
+        "unit": "bin/codecept run unit --coverage --coverage-html"
+    }
+}

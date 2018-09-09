@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+    defshop_php:
+        volumes:
+            - defshop-sync:/var/www
+
+volumes:
+  defshop-sync:
+    external: true
