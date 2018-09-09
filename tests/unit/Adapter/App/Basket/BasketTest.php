@@ -7,7 +7,6 @@ use DefShop\Adapter\App\Basket\Basket;
 use DefShop\Adapter\Core\Session;
 use Mockery;
 
-
 /**
  * bin/codecept run unit Adapter/App/Basket/BasketTest
  */
@@ -76,5 +75,4 @@ class BasketTest extends Unit
 
         $basket->remove($itemToRemove);
     }
-
 }

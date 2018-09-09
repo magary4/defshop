@@ -8,7 +8,6 @@ use DefShop\Domain\Model\Tax;
 use Mockery;
 use Faker\Factory as FakerFactory;
 
-
 /**
  * bin/codecept run unit Domain/Model/TaxTest
  */

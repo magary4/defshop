@@ -9,7 +9,6 @@ use DefShop\Domain\Model\User;
 use Mockery;
 use Faker\Factory as FakerFactory;
 
-
 /**
  * bin/codecept run unit Domain/Model/UserTest
  */

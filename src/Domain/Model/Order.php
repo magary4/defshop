@@ -111,22 +111,6 @@ class Order
     }
 
     /**
-     * @return User
-     */
-    public function getUser(): User
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param User $user
-     */
-    public function setUser(User $user)
-    {
-        $this->user = $user;
-    }
-
-    /**
      * @return int
      */
     public function getUserId(): int
@@ -135,7 +119,7 @@ class Order
     }
 
     /**
-     * @param int $user_id
+     * @param int $userId
      */
     public function setUserId(int $userId)
     {
