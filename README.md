@@ -22,3 +22,4 @@ docker exec -i defshop_mysql mysql -udefshop -pdefshop defshop < data/db.sql
 4. flash-messages
 5. dedicated database table for payment methods
 6. 100% test coverage
+7. solution to store images

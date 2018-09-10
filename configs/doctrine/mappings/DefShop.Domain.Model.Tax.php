@@ -33,10 +33,3 @@ $metadata->mapField([
     'type' => 'float',
     'nullable' => false
 ]);
-
-//$metadata->mapOneToMany([
-//    'fieldName'      => 'tax_id',
-//    'targetEntity'   => \DefShop\Domain\Model\Product::class,
-//    'cascade'        => ['persist','merge'],
-//    'mappedBy'       => 'tax_id'
-//]);

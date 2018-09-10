@@ -28,9 +28,9 @@ if (!$route) {
 
 $callable = $route->handler;
 
-//try {
+try {
     echo $callable( $request );
-//} catch (\Exception $e) {
-//    http_response_code(500);
-//    die("Something went wrong"); // TODO: pretty template
-//}
+} catch (\Exception $e) {
+    http_response_code(500);
+    die("Something went wrong"); // TODO: pretty template
+}

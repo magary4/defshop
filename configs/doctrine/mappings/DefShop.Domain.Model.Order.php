@@ -46,11 +46,3 @@ $metadata->mapOneToMany([
     'cascade'        => ['persist','merge'],
     'mappedBy'       => "order_id"
 ]);
-
-
-//$metadata->mapManyToOne([
-//    'fieldName'      => 'user',
-//    'targetEntity'   => \DefShop\Domain\Model\User::class,
-//    //'cascade'        => ['persist','merge'],
-//    'joinColumn'     => ['name'=>'user_id', 'referencedColumnMame'=>'id'],
-//]);
